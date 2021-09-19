@@ -55,12 +55,12 @@ class Multiplicacao(Operacao):
 
 class Testes(TestCase):
 
-     def test_soma(self):
+    def test_soma(self):
         calculador = Calculadora()
         result = calculador.calcular(4,4, 'soma')
         self.assertEqual(result, 8)
 
-     def test_subtracao(self):
+    def test_subtracao(self):
         calculador2 = Calculadora()
         result2 = calculador2.calcular(4,4, 'subtrair')
         self.assertEqual(result2, 0)
@@ -70,9 +70,9 @@ class Testes(TestCase):
         result4 = calculador4.calcular(4,4, 'divisao')
         self.assertEqual(result4, 1)
 
-     def test_multiplicacao(self):
+    def test_multiplicacao(self):
         calculador3 = Calculadora()
-        result3 = calculador3(4,4, 'multiplicacao'))
+        result3 = calculador3.calcular(4,4, 'multiplicacao'))
         self.assertEqual(result3, 16)
 
 
