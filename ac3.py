@@ -72,7 +72,7 @@ class Testes(TestCase):
 
     def test_multiplicacao(self):
         calculador3 = Calculadora()
-        result3 = calculador3.calcular(4,4, 'multiplicacao'))
+        result3 = calculador3.calcular(4,4, 'multiplicacao')
         self.assertEqual(result3, 16)
 
 
